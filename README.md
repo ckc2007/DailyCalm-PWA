@@ -44,6 +44,15 @@ To start, a new user will use the signup form to create a new profile .
 
 ## Screenshot / Video
 
+PWA - Service Worker
+![Home - Logged Out View](./assets/images/Service%20Worker.png)
+
+PWA - Web Manifest
+![Home - Logged Out View](./assets/images/Manifest.png)
+
+PWA - Lighthouse Report
+![Home - Logged Out View](./assets/images/lighthouse.png)
+
 Logged Out Home View
 ![Home - Logged Out View](./assets/images/Screen%20Shot%202023-08-06%20at%2011.54.02%20PM.png)
 
