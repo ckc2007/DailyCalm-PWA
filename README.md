@@ -102,6 +102,7 @@ Tutorials used in this project include:
 - https://www.youtube.com/shorts/Xrgddey8jcA
 - https://www.youtube.com/watch?v=IZGNcSuwBZs&t=657s
 - https://developers.google.com/web/tools/workbox/guides/generate-service-worker/webpack
+- https://coding-boot-camp.github.io/full-stack/mongodb/deploy-with-heroku-and-mongodb-atlas
 
 ## License
 
