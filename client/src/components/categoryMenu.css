@@ -1,0 +1,39 @@
+.categoryCard {
+    width: 100%;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+  
+.categoryCard .card {
+    width: 100%;
+    /* To maintain a square shape, set height equal to width */
+    height: 100%;
+    /* Adjust border-radius for less-rounded corners (e.g., 10px) */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.categoryCard .card .card-content {
+    text-align: center;
+    padding: 10px;
+}
+  
+.categoryCard .card .card-content .title {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+  
+.categoryCard:hover {
+    transform: scale(1.05);
+}
+  
+.categoryCard.active {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

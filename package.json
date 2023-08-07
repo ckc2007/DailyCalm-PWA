@@ -1,0 +1,32 @@
+{
+  "name": "dailycalm",
+  "version": "1.0.0",
+  "description": "Introducing DailyCalm, your personal self-care companion!",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run build && cd server && node server.js",
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+    "server": "cd server nodemon server.js --ignore client",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build",
+    "client": "cd client && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-react": "^7.22.5",
+    "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "apollo-server-express": "^3.12.0",
+    "bulma": "^0.9.4",
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0",
+    "react-bulma-components": "^4.1.0",
+    "react-confetti": "^6.1.0"
+  }
+}

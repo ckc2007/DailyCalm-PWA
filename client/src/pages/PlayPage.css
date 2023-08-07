@@ -1,0 +1,51 @@
+.custom-background {
+  min-height: 100vh;
+  background-image: url("../../public/images/forest.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Styles for the progress bar */
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f3f3f3;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  width: calc((100% / var(--max-progress)) * var(--current-progress));
+  background-color: #00d1b2;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Styles for gold star animation */
+@keyframes starAnimation {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Blinking animation */
+@keyframes blink {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+}
+
+/* Static display for the star */
+.gold-star {
+  animation: blink 1s ease-in-out 1; /* Animate once */
+  animation-fill-mode: forwards; /* Stay at the last keyframe after animation */
+}
